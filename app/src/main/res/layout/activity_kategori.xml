@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListKategoriActivity"
+    android:background="@color/purple">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:navigationIcon="@drawable/ic_back">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:text="Kategori Barang"
+                    android:textColor="@color/black"
+                    android:textSize="28sp" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- CardView for the category 1 -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/categoryCard"
+        android:layout_width="330dp"
+        android:layout_height="120dp"
+        android:layout_margin="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/cream"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Labor E57 S"
+            android:textColor="@color/black"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- CardView for the category 2 -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/categoryCard2"
+        android:layout_width="330dp"
+        android:layout_height="120dp"
+        android:layout_margin="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/cream"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoryCard">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Labor E57 P"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="45sp" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- CardView for the category 3 -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/categoryCard3"
+        android:layout_width="330dp"
+        android:layout_height="120dp"
+        android:layout_margin="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/cream"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoryCard2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Labor E59 "
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="45sp" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
